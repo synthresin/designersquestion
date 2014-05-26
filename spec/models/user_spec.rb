@@ -1,5 +1,6 @@
 require 'spec_helper'
 
 describe User do
-  pending "add some examples to (or delete) #{__FILE__}"
+  it '중복된 이메일 주소가 있으면 유효하지 않다.'
+  it '이메일 주소가 없으면 유효하지 않다.'
 end
