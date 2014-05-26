@@ -4,7 +4,7 @@ describe Question do
   it '제목, 내용, user_id가 있으면 유효하다.' do
   	question = Question.new(
   		title:'제목',
-  		lastname:'내용',
+  		body:'내용',
   		user_id: 1)
   	expect(question).to be_valid
   end
