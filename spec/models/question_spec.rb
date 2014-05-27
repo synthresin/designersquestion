@@ -13,8 +13,8 @@ describe Question do
     question = build(:question, body: nil)
   	expect(question).to have(1).errors_on(:body)
  	end
-  it 'user_id가 없으면 유효하지 않다.' do
-    question = build(:question, user_id: nil)
-  	expect(question).to have(1).errors_on(:user_id)
+  it 'user가 없으면 유효하지 않다.' do
+    question = build(:question, user: nil)
+  	expect(question).to have(1).errors_on(:user)
   end
 end
