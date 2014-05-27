@@ -1,8 +1,8 @@
-# Read about factories at https://github.com/thoughtbot/factory_girl
+require 'faker'
 
 FactoryGirl.define do
   factory :answer do
-    body "MyText"
+    body { Faker::Lorem.paragraph }
     user nil
     question nil
   end

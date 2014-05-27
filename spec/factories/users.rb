@@ -1,9 +1,10 @@
-# Read about factories at https://github.com/thoughtbot/factory_girl
+require 'faker'
 
 FactoryGirl.define do
   factory :user do
   	password "3wzzzgax"
   	password_confirmation "3wzzzgax"
-  	sequence(:email) { |n| "synthresin#{n}@me.com"} 
+  	#sequence(:email) { |n| "synthresin#{n}@me.com"} 
+  	email { Faker::Internet.email }
   end
 end
