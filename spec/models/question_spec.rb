@@ -17,4 +17,6 @@ describe Question do
     question = build(:question, user: nil)
   	expect(question).to have(1).errors_on(:user)
   end
+
+  it 'views attribute를 가지고 있다'
 end
